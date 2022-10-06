@@ -70,6 +70,11 @@ class SerieController extends AbstractController
         $entityManager-> persist($serie);
         $entityManager-> flush();
 
+        //modification de la serie : remettre un $serie->setxxx
+
+        //suppression de la serie
+        // $entityManager->remove($serie);
+        // $entityManager-> flush();
 
         //$entityManager = $this->getDoctrine()->getManager();
 
